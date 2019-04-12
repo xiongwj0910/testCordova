@@ -1,0 +1,15 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+project 'testCordova.xcodeproj'
+
+platform :ios, '9.0'
+
+def commonPods
+  #,:git=>'https://github.com/xiongwj0910/Cordova-iOS.git',:tag=>'4.5.6'
+    pod 'Cordova'
+    pod 'cordova-plugin-wkwebview-engine'
+end
+
+target 'testCordova' do
+    commonPods
+end

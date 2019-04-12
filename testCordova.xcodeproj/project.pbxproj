@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0FE626C8D6DBA855D55E32FC /* libPods-testCordova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B2BCA6E35AB6A38D52826D8 /* libPods-testCordova.a */; };
 		959B14C6225E1408003B8002 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 959B14C5225E1408003B8002 /* AppDelegate.m */; };
 		959B14C9225E1408003B8002 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 959B14C8225E1408003B8002 /* ViewController.m */; };
 		959B14CC225E1408003B8002 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 959B14CA225E1408003B8002 /* Main.storyboard */; };
 		959B14CE225E1409003B8002 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 959B14CD225E1409003B8002 /* Assets.xcassets */; };
 		959B14D1225E140A003B8002 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 959B14CF225E140A003B8002 /* LaunchScreen.storyboard */; };
 		959B14D4225E140A003B8002 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 959B14D3225E140A003B8002 /* main.m */; };
+		959B150B225E5C10003B8002 /* config.xml in Resources */ = {isa = PBXBuildFile; fileRef = 959B150A225E5C10003B8002 /* config.xml */; };
+		959B1510225E5C4E003B8002 /* www in Resources */ = {isa = PBXBuildFile; fileRef = 959B150F225E5C4E003B8002 /* www */; };
+		959B1514225EE0EC003B8002 /* MainH5ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 959B1513225EE0EC003B8002 /* MainH5ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4B2BCA6E35AB6A38D52826D8 /* libPods-testCordova.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-testCordova.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		665A0BF4C56ED612B0EE2DF6 /* Pods-testCordova.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testCordova.release.xcconfig"; path = "Target Support Files/Pods-testCordova/Pods-testCordova.release.xcconfig"; sourceTree = "<group>"; };
 		959B14C1225E1408003B8002 /* testCordova.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testCordova.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		959B14C4225E1408003B8002 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		959B14C5225E1408003B8002 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +32,11 @@
 		959B14D0225E140A003B8002 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		959B14D2225E140A003B8002 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		959B14D3225E140A003B8002 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		959B150A225E5C10003B8002 /* config.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = config.xml; path = Resources/config.xml; sourceTree = "<group>"; };
+		959B150F225E5C4E003B8002 /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = Resources/www; sourceTree = "<group>"; };
+		959B1512225EE0EC003B8002 /* MainH5ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainH5ViewController.h; sourceTree = "<group>"; };
+		959B1513225EE0EC003B8002 /* MainH5ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainH5ViewController.m; sourceTree = "<group>"; };
+		BE877F574497FD40D86B3C1B /* Pods-testCordova.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testCordova.debug.xcconfig"; path = "Target Support Files/Pods-testCordova/Pods-testCordova.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +44,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FE626C8D6DBA855D55E32FC /* libPods-testCordova.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F6B1D6C34A49311C613CB3F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BE877F574497FD40D86B3C1B /* Pods-testCordova.debug.xcconfig */,
+				665A0BF4C56ED612B0EE2DF6 /* Pods-testCordova.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		16D4F1F6CC02652B36AE45E3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4B2BCA6E35AB6A38D52826D8 /* libPods-testCordova.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		959B14B8225E1407003B8002 = {
 			isa = PBXGroup;
 			children = (
+				959B14E0225E572F003B8002 /* Staging */,
 				959B14C3225E1408003B8002 /* testCordova */,
 				959B14C2225E1408003B8002 /* Products */,
+				0F6B1D6C34A49311C613CB3F /* Pods */,
+				16D4F1F6CC02652B36AE45E3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,8 +99,19 @@
 				959B14CF225E140A003B8002 /* LaunchScreen.storyboard */,
 				959B14D2225E140A003B8002 /* Info.plist */,
 				959B14D3225E140A003B8002 /* main.m */,
+				959B1512225EE0EC003B8002 /* MainH5ViewController.h */,
+				959B1513225EE0EC003B8002 /* MainH5ViewController.m */,
 			);
 			path = testCordova;
+			sourceTree = "<group>";
+		};
+		959B14E0225E572F003B8002 /* Staging */ = {
+			isa = PBXGroup;
+			children = (
+				959B150A225E5C10003B8002 /* config.xml */,
+				959B150F225E5C4E003B8002 /* www */,
+			);
+			name = Staging;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -78,6 +121,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 959B14D7225E140A003B8002 /* Build configuration list for PBXNativeTarget "testCordova" */;
 			buildPhases = (
+				6134FC481C6A28E7AB64936B /* [CP] Check Pods Manifest.lock */,
 				959B14BD225E1408003B8002 /* Sources */,
 				959B14BE225E1408003B8002 /* Frameworks */,
 				959B14BF225E1408003B8002 /* Resources */,
@@ -131,10 +175,37 @@
 				959B14D1225E140A003B8002 /* LaunchScreen.storyboard in Resources */,
 				959B14CE225E1409003B8002 /* Assets.xcassets in Resources */,
 				959B14CC225E1408003B8002 /* Main.storyboard in Resources */,
+				959B1510225E5C4E003B8002 /* www in Resources */,
+				959B150B225E5C10003B8002 /* config.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6134FC481C6A28E7AB64936B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-testCordova-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		959B14BD225E1408003B8002 /* Sources */ = {
@@ -143,6 +214,7 @@
 			files = (
 				959B14C9225E1408003B8002 /* ViewController.m in Sources */,
 				959B14D4225E140A003B8002 /* main.m in Sources */,
+				959B1514225EE0EC003B8002 /* MainH5ViewController.m in Sources */,
 				959B14C6225E1408003B8002 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +355,7 @@
 		};
 		959B14D8225E140A003B8002 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE877F574497FD40D86B3C1B /* Pods-testCordova.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -292,7 +365,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.csg..testCordova;
+				PRODUCT_BUNDLE_IDENTIFIER = com.csg.testCordova;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -300,6 +373,7 @@
 		};
 		959B14D9225E140A003B8002 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 665A0BF4C56ED612B0EE2DF6 /* Pods-testCordova.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -309,7 +383,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.csg..testCordova;
+				PRODUCT_BUNDLE_IDENTIFIER = com.csg.testCordova;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
